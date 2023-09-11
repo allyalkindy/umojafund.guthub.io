@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    overflow:none; 
+    background-image: linear-gradient(to bottom,white, orangered);
+
+
+}
+img{
+    display:block;
+    max-width: 100%;
+   /*  height:auto; */
+ 
+    border-radius: 50%;
+}
+
+.nav-bar{
+    font-size:max(1rem, 1.6vh);;
+    height: 9vh;
+    width: 100%;
+    overflow: none;
+    background-color: #fff;
+    max-width: 100%;   
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+}
+
+.nav-menu{
+    height: 100%;
+}
+.nav-menu ul{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 90%;
+ 
+
+}
+.nav-menu ul li{
+    
+    list-style-type: none;
+    display: inline-block;
+    margin : auto   5px auto 1vh ; 
+    animation: link 2s ease-in-out 1;
+
+}
+.nav-menu ul li a {
+    text-decoration: none;
+    color :darkred;
+    padding: 6px;
+    font-size: max(1rem, 1.6vh);
+   border: 1px solid darkred;
+    box-shadow:0 2px 4px rgba(0,0,0,0.2);
+    border-radius: 10px;
+   font-weight: bold;
+  
+}
+.nav-menu ul li a:hover{
+    opacity: 0.5;
+}
+
+.nav-bar .umoja-logo{
+    height: 90%;
+    width:65px;
+    margin: auto;
+   
+    padding: 5px;
+}
+
+.logo {
+    display: flex;
+    height: 100%;
+}
+
+.logo .logo-disc {
+  margin-top: 12px;
+   margin-left: 0px    ;
+   color: orangered;
+}   
+.banner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: column;
+    overflow: none;
+}
+
+.banner .h1 {
+   
+    margin-top: 11vh;
+    margin-bottom: 2vh;
+    margin-left: 4vh;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 4.5vh;
+    border-bottom: 2px solid #000;
+    padding-bottom: 2vh;
+}
+
+
+.fund-acts{
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3vh;
+}
+
+.fund-acts li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.fund-acts h4 {
+    font-size: 4vh;
+    align-content: center;
+
+}
+
+.banner .small-disc{
+   
+    color:white;
+    margin-top: 3vh;
+    font-size: 3.5vh;
+    background-color: darkred;
+    font-style: oblique;
+    box-shadow:0 6px 8px rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 15px;
+    animation: small-disc 2s ease-in-out 1;
+}
+
+.banner .small-disc:hover{
+ opacity: 0.8;
+
+}
+
+.info-button{
+    font-size: 20px;
+    margin-top: 2vh;
+    margin-bottom: 7vh;
+    padding: 13px 23px;
+    border: 1px solid darkred;
+    color: darkred;
+    
+    box-shadow:0 4px 6px rgba(0,0,0,0.8); 
+    border-radius: 20px ;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: 800;
+    
+    animation: infobtn 2s ease-in-out 1;
+}
+
+
+.info-button:hover .info-button:focus {
+    background-color: white;
+    color: darkred;
+    animation: none;
+    
+}
+
+
+.card{
+   background-color:aquamarine;
+   border-radius: 10px;
+   margin-bottom: 4vh;
+   background-image: linear-gradient(to bottom,white, orangered);
+   width: 90%;
+   padding: 0.5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   box-shadow:  0 2px 4px rgba(0,0,0,0.2);
+
+}
+
+.card figure{ 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    margin-bottom: 15px;
+    border: 5px double orangered;
+    height: 300px;
+    width: 300px;
+}
+ 
+.card figcaption {
+    font-size: max(1rem, 3vh);
+}
+
+.card p{
+    font-size: max(1rem, 3vh); 
+}
+
+a:any-link{
+    text-decoration: none;
+}
+
+
+
+footer {
+        height: 40px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0; 
+        right: 0;
+        background-color: #fff; 
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); 
+        font-size: 3vh;
+        text-align: center;
+        padding: 0.5rem;
+        font-weight: bold;
+        color: orangered;
+      }
+      
+
+  
+
+@keyframes infobtn {
+    0%{
+        transform: scale(0) ;
+    }
+    40%{
+        transform: scale(1.1) rotate(720deg);
+    }
+    80%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(0) ;
+    }
+    }
+
+    @keyframes link {
+        0%{
+            transform: scaleY(0) scaleX(0);
+        }
+        
+       40%{
+        transform: scale(1.1) rotate(720deg);
+        }
+        80%{
+            transform: scale(1.2);
+        }
+        100%{
+            transform: scale(0);
+        }
+    
+
+}
+
+@keyframes small-disc {
+    0%{ 
+       
+        
+    }
+    
+   40%{
+    transform: scale(1.1) rotate(720deg);
+    }
+    80%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(0);
+    }
+
+
+}
